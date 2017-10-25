@@ -8,6 +8,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     catch (Exception e)
                     {
+                        Log.e("error","Error de Actualizacion");
                         Toast.makeText(getApplicationContext(),"Error de Actualizacion",Toast.LENGTH_SHORT).show();
                     }
 
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                         new PostgreSqlJDBC().execute();
                     }catch (Exception e)
                     {
+                        Log.e("error","Error de Actualizacion");
                         Toast.makeText(getApplicationContext(),"Error de Conexion",Toast.LENGTH_SHORT).show();
                     }
 
@@ -114,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                                                        equipo.setStatus(true);
                                                        userInput.setText(mensaje);
                                                        busqueda(equipo,"");
-                                                       lista.add(new Equipo(equipo));
+                                                       //lista.add(new Equipo(equipo));
                                                        listView.setAdapter(new AdapterEquipos(lista,getApplicationContext()));
                                                        alertD.cancel();
                                                    }
@@ -145,10 +148,7 @@ public class MainActivity extends AppCompatActivity {
             btnadd3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    equipo.setStatus(false);
-                    busqueda(equipo,observacion());
-                    //lista.add(new Equipo(equipo));
-                    listView.setAdapter(new AdapterEquipos(lista,getApplicationContext()));
+                    observacion();
                     alertD.cancel();
                 }
             });
@@ -179,19 +179,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 observacionesm =userInput.getText().toString();
+                equipo.setStatus(false);
+                busqueda(equipo,observacionesm);
+                //mTextMessage.setText("Bienvenidididni");
+                //lista.add(new Equipo(equipo));
+                listView.setAdapter(new AdapterEquipos(lista,getApplicationContext()));
                 alertD.cancel();
             }
         });
         cancelarob.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                observacionesm="-";
-                //mTextMessage.setText(Observaciones[0]);
+
                 alertD.cancel();
             }
         });
         alertD.setView(promptView);
         alertD.show();
+        mTextMessage.setText(observacionesm);
         return observacionesm;
     }
 
@@ -366,7 +371,7 @@ public class MainActivity extends AppCompatActivity {
                 equipo=lista.remove(i);
                 equipo.setScan(true);
                 equipo.setStatus(status);
-                if(o=="")
+                if(o!="")
                 {
                     equipo.setObservaciones(o);
                 }

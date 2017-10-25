@@ -178,7 +178,7 @@ public class Equipo {
     public void setObservaciones(String observaciones) {
 
 
-        this.observaciones =getObservaciones()+"----"+fecha()+observaciones;
+        this.observaciones =getObservaciones()+"----"+fecha()+"  "+observaciones;
     }
     public void setObservacionesnew(String observaciones) {
 
@@ -189,8 +189,9 @@ public class Equipo {
     public String fecha()
     {
         Calendar cal=Calendar.getInstance();
-        int mesmes= Calendar.MONTH;
-//        mesmes=mesmes+1;
+        int mesmes= cal.get(Calendar.MONTH);
+
+        mesmes=mesmes+1;
         String mes=(String.valueOf(mesmes)).concat("-");
         String dia=(String.valueOf(cal.get(Calendar.DAY_OF_MONTH)));
         String año=(String.valueOf(cal.get(Calendar.YEAR))).concat("-");
