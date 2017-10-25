@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<ScrollView
+    android:id="@+id/scrollViewdes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/fab_margin">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+<GridLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:orientation="vertical"
+    tools:context="com.example.alejandro.inventariouabjo3.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="ID"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"></TextView>
+    <TextView
+        android:id="@+id/des_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID2"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NombreDepositario"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acendo2"
+        android:textAlignment="center"
+        android:background="@color/colorDivider">
+    </TextView>
+
+    <TextView
+
+        android:id="@+id/des_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NombreDepositari2"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acendo2"
+
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/des_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marca"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"
+        ></TextView>
+    <TextView
+        android:id="@+id/des_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marca"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modelo"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider">
+            </TextView>
+    <TextView
+        android:id="@+id/des_mod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Modelo"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Serie"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"></TextView>
+    <TextView
+        android:id="@+id/des_serie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serie"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Factura"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"></TextView>
+
+    <TextView
+        android:id="@+id/des_fac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Factura"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recurso"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"></TextView>
+    <TextView
+        android:id="@+id/des_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recurso"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proveedores"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"></TextView>
+    <TextView
+        android:id="@+id/des_prov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proveedores"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="descripcion"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"
+        android:textSize="@dimen/text_acent"></TextView>
+
+    <TextView
+        android:id="@+id/des_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="descripcion"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"></TextView>
+    <TextView
+        android:id="@+id/des_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Fecha"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Observaciones"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/des_obs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observaciones \n observaciones"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"></TextView>
+
+    <TextView
+        android:id="@+id/statusdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/text_acent"
+        android:text="Estado"
+
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        android:background="@color/colorDivider"
+        ></TextView>
+    <ImageView
+        android:layout_below="@id/statusdes"
+        android:id="@+id/img_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_ok_black_24dp" />
+    <TextView
+        android:id="@+id/statDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/text_acent"
+        android:text="Estado"
+
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_acent"
+        android:textAlignment="center"
+        ></TextView>
+
+</GridLayout>
+    </RelativeLayout>
+
+</ScrollView>
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/fab"
+
+        android:layout_alignBottom="@+id/scrollViewdes"
+        android:layout_alignRight="@+id/scrollViewdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+</RelativeLayout>
+

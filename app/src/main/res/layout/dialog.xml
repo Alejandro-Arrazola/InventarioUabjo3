@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INFORMACION RECIBIDA \n ¿Que desea Realizar?"
+
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <TextView
+        android:layout_below="@+id/text1"
+        android:id="@+id/text"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Que desea Realizar?"
+
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text">
+        <Button
+            android:id="@+id/visualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visualizar Formato "
+            android:layout_below="@+id/text"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+        android:id="@+id/DarAlta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Satisfactoriamente"
+        android:layout_below="@+id/text"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/editar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Con Observacion"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

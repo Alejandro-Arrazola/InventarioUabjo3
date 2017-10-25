@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Inventario UABJO</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Nuevo">Nuevo</string>
+    <string name="Generar">Generar</string>
+    <string name="Exportar">Exportar</string>
+    <string name="Scannear">Scannear</string>
+    <string name="recibidom">Datos Recibidos Exitosamente</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Bienvenido">Bienvenido</string>
+    <string name="title_activity_detalle_equipo">Descripcion</string>
+    <string name="save">Guardar</string>
+    <string name="confg">Configura</string>
+    <string name="text_Observaciones">Agregue las Observaciones</string>
+
+</resources>
